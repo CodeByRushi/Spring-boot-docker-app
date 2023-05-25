@@ -1,4 +1,4 @@
-package in.ashokit.rest;
+package in.rushikesh.rest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,10 +15,10 @@ public class WelcomeRestController {
 		logger.info("***** WelcomeRestController::Constructor *****");
 	}
 
-	@GetMapping
+	@GetMapping("/")
 	public String welcomeMsg() {
 		logger.info("***** welcomeMsg() execution start *****");
-		String msg = "Welcome to Ashok IT..!!";
+		String msg = "Welcome to Rushikesh's Coding frequency..!!";
 		logger.info("***** welcomeMsg() execution end *****");
 		return msg;
 	}
